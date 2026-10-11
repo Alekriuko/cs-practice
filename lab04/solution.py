@@ -11,7 +11,8 @@ def winner(names: list[str], scores: list[float]) -> str:
 def average(scores: list[float]) -> float:
     if not scores:
         return 0.0
-    return f'{(sum(scores) / len(scores)):.2f}'
+    d = f'{(sum(scores) / len(scores)):.2f}'
+    return float(d)
 
 def ranking(names: list[str], scores: list[float]) -> list[str]:
     paired = sorted(zip(names, scores), key=lambda x: x[1], reverse=True)
