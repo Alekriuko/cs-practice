@@ -12,10 +12,12 @@ for i in range(n):
     else:
         r = float(r)
         maxt = max(r, maxt)
-        sumt +=r 
+        sumt +=r
         count +=1
         if r>limit:
             bal +=1
+if count == 0:
+    count = 1
 print(n)
 print(error_c)
 print(bal)
